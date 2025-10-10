@@ -22,12 +22,12 @@ const chartConfig = {
 
 export function RevenueChart() {
   return (
-    <Card className="lg:col-span-4 p-6">
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold">Receita Mensal</h3>
-        <p className="text-sm text-muted-foreground mt-1">Evolução da receita nos últimos 6 meses</p>
+    <Card className="lg:col-span-4 p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-base sm:text-lg font-semibold">Receita Mensal</h3>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">Evolução da receita nos últimos 6 meses</p>
       </div>
-      <ChartContainer config={chartConfig} className="h-[300px] w-full">
+      <ChartContainer config={chartConfig} className="h-[250px] sm:h-[300px] w-full">
         <AreaChart data={data}>
           <defs>
             <linearGradient id="fillRevenue" x1="0" y1="0" x2="0" y2="1">
@@ -36,12 +36,13 @@ export function RevenueChart() {
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
-          <XAxis dataKey="month" tickLine={false} axisLine={false} className="text-xs" />
+          <XAxis dataKey="month" tickLine={false} axisLine={false} className="text-[10px] sm:text-xs" />
           <YAxis
             tickLine={false}
             axisLine={false}
-            className="text-xs"
+            className="text-[10px] sm:text-xs"
             tickFormatter={(value) => `R$ ${(value / 1000).toFixed(0)}k`}
+            width={45}
           />
           <ChartTooltip content={<ChartTooltipContent />} />
           <Area

@@ -42,36 +42,36 @@
 .dark {
   /* Tema escuro mais sofisticado com preto profundo e laranja vibrante */
   --background: rgb(10, 10, 10);
-  --foreground: rgb(250, 250, 250);
-  --card: rgb(18, 18, 18);
-  --card-foreground: rgb(250, 250, 250);
-  --popover: rgb(18, 18, 18);
-  --popover-foreground: rgb(250, 250, 250);
+  --foreground: rgb(255, 255, 255);
+  --card: rgb(20, 20, 20);
+  --card-foreground: rgb(255, 255, 255);
+  --popover: rgb(20, 20, 20);
+  --popover-foreground: rgb(255, 255, 255);
   --primary: rgb(255, 107, 0);
   --primary-foreground: rgb(255, 255, 255);
-  --secondary: rgb(30, 30, 30);
-  --secondary-foreground: rgb(250, 250, 250);
-  --muted: rgb(30, 30, 30);
-  --muted-foreground: rgb(160, 160, 160);
+  --secondary: rgb(35, 35, 35);
+  --secondary-foreground: rgb(255, 255, 255);
+  --muted: rgb(35, 35, 35);
+  --muted-foreground: rgb(200, 200, 200);
   --accent: rgb(255, 107, 0);
   --accent-foreground: rgb(255, 255, 255);
   --destructive: rgb(220, 38, 38);
-  --destructive-foreground: rgb(250, 250, 250);
-  --border: rgb(40, 40, 40);
-  --input: rgb(30, 30, 30);
+  --destructive-foreground: rgb(255, 255, 255);
+  --border: rgb(50, 50, 50);
+  --input: rgb(35, 35, 35);
   --ring: rgb(255, 107, 0);
   --chart-1: rgb(255, 107, 0);
   --chart-2: rgb(255, 140, 50);
   --chart-3: rgb(255, 170, 100);
-  --chart-4: rgb(100, 100, 100);
-  --chart-5: rgb(150, 150, 150);
+  --chart-4: rgb(120, 120, 120);
+  --chart-5: rgb(160, 160, 160);
   --sidebar: rgb(15, 15, 15);
-  --sidebar-foreground: rgb(250, 250, 250);
+  --sidebar-foreground: rgb(255, 255, 255);
   --sidebar-primary: rgb(255, 107, 0);
   --sidebar-primary-foreground: rgb(255, 255, 255);
-  --sidebar-accent: rgb(30, 30, 30);
-  --sidebar-accent-foreground: rgb(250, 250, 250);
-  --sidebar-border: rgb(40, 40, 40);
+  --sidebar-accent: rgb(35, 35, 35);
+  --sidebar-accent-foreground: rgb(255, 255, 255);
+  --sidebar-border: rgb(50, 50, 50);
   --sidebar-ring: rgb(255, 107, 0);
 }
 
@@ -122,5 +122,23 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Melhorando legibilidade com tamanho de fonte base maior */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Garantindo contraste adequado em todos os textos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-foreground;
+    font-weight: 600;
+  }
+
+  p {
+    @apply text-foreground;
   }
 }

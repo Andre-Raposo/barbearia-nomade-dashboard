@@ -1,34 +1,23 @@
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { StatsCards } from "@/components/stats-cards"
-import { RevenueChart } from "@/components/revenue-chart"
-import { AppointmentsChart } from "@/components/appointments-chart"
-import { UpcomingAppointments } from "@/components/upcoming-appointments"
-import { TopServices } from "@/components/top-services"
-import { ServicesTable } from "@/components/services-table"
+"use client"
 
-export default function DashboardPage() {
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
+
+export default function HomePage() {
+  const router = useRouter()
+
+  useEffect(() => {
+    const isAuthenticated = localStorage.getItem("isAuthenticated")
+    if (isAuthenticated) {
+      router.push("/dashboard")
+    } else {
+      router.push("/login")
+    }
+  }, [router])
+
   return (
-    <DashboardLayout>
-      <div className="space-y-6">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight text-balance">Dashboard</h1>
-          <p className="text-muted-foreground mt-1">Bem-vindo ao painel da Barbearia Nômade</p>
-        </div>
-
-        <StatsCards />
-
-        <div className="grid gap-6 lg:grid-cols-7">
-          <RevenueChart />
-          <AppointmentsChart />
-        </div>
-
-        <div className="grid gap-6 lg:grid-cols-2">
-          <UpcomingAppointments />
-          <TopServices />
-        </div>
-
-        <ServicesTable />
-      </div>
-    </DashboardLayout>
+    <div className="min-h-screen flex items-center justify-center bg-[rgb(10,10,10)]">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
+    </div>
   )
 }

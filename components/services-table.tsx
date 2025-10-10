@@ -51,24 +51,29 @@ const services = [
 
 export function ServicesTable() {
   return (
-    <Card className="p-6">
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold">Tabela de Serviços e Preços</h3>
-        <p className="text-sm text-muted-foreground mt-1">Todos os serviços da Barbearia Nômade</p>
+    <Card className="p-4 sm:p-6 border-border/50">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-base sm:text-lg font-semibold">Tabela de Serviços e Preços</h3>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">Todos os serviços da Barbearia Nômade</p>
       </div>
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3 max-h-[500px] overflow-y-auto pr-2">
         {services.map((service) => (
           <div
             key={service.name}
-            className="flex items-start justify-between p-4 rounded-lg border border-border/50 hover:border-primary/50 transition-colors"
+            className="flex flex-col sm:flex-row sm:items-start justify-between p-3 sm:p-4 rounded-lg border border-border/50 hover:border-primary/50 transition-colors gap-2 sm:gap-0"
           >
-            <div className="flex-1">
-              <h4 className="font-medium text-sm">{service.name}</h4>
+            <div className="flex-1 min-w-0">
+              <h4 className="font-medium text-xs sm:text-sm">{service.name}</h4>
               {service.description && (
-                <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{service.description}</p>
+                <p className="text-xs text-muted-foreground mt-1 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                  {service.description}
+                </p>
               )}
             </div>
-            <Badge variant="secondary" className="ml-4 shrink-0 bg-primary/10 text-primary hover:bg-primary/20">
+            <Badge
+              variant="secondary"
+              className="ml-0 sm:ml-4 shrink-0 bg-primary/10 text-primary hover:bg-primary/20 w-fit"
+            >
               R$ {service.price}
             </Badge>
           </div>

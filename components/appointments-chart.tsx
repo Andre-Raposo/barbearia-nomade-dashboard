@@ -23,16 +23,16 @@ const chartConfig = {
 
 export function AppointmentsChart() {
   return (
-    <Card className="lg:col-span-3 p-6">
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold">Agendamentos Semanais</h3>
-        <p className="text-sm text-muted-foreground mt-1">Distribuição por dia da semana</p>
+    <Card className="lg:col-span-3 p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h3 className="text-base sm:text-lg font-semibold">Agendamentos Semanais</h3>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">Distribuição por dia da semana</p>
       </div>
-      <ChartContainer config={chartConfig} className="h-[300px] w-full">
+      <ChartContainer config={chartConfig} className="h-[250px] sm:h-[300px] w-full">
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
-          <XAxis dataKey="day" tickLine={false} axisLine={false} className="text-xs" />
-          <YAxis tickLine={false} axisLine={false} className="text-xs" />
+          <XAxis dataKey="day" tickLine={false} axisLine={false} className="text-[10px] sm:text-xs" />
+          <YAxis tickLine={false} axisLine={false} className="text-[10px] sm:text-xs" width={35} />
           <ChartTooltip content={<ChartTooltipContent />} />
           <Bar dataKey="appointments" fill="hsl(var(--primary))" radius={[8, 8, 0, 0]} />
         </BarChart>
