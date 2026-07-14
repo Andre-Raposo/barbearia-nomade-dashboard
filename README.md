@@ -1,144 +1,88 @@
-# Dashboard Barbearia Nômade
+# Dashboard Acadêmico — Barbearia Nômade
 
-Um dashboard responsivo e interativo desenvolvido em React para gerenciamento e análise de dados da Barbearia Nômade.
+Projeto acadêmico desenvolvido para representar indicadores e informações de uma barbearia fictícia, utilizando dados simulados.
 
-## 🎨 Design e Características
+Minha principal participação no projeto envolveu o levantamento de requisitos, a organização das informações, a modelagem do banco de dados, a documentação e a definição dos indicadores apresentados no dashboard.
 
-### Esquema de Cores
-- **Primária**: Laranja (#FF6B35, #FF8C42, #FFA366)
-- **Secundária**: Preto (#000000, #1A1A1A, #333333)
-- **Neutras**: Branco (#FFFFFF), Cinza (#F5F5F5, #E0E0E0)
+A interface foi construída com apoio de ferramentas de Inteligência Artificial e utiliza tecnologias como React e bibliotecas de visualização. O projeto faz parte do meu processo de aprendizagem e não representa domínio avançado dessas tecnologias.
 
-### Layout Responsivo
-- Sistema de grade CSS de 12 colunas
-- Largura total (100vw) sem margens laterais
-- Breakpoints otimizados para desktop, tablet e mobile
-- Componentes que se ajustam automaticamente ao tamanho da tela
+## Objetivo do projeto
 
-## 📊 Componentes do Dashboard
+Criar uma visão centralizada de informações importantes para a gestão de uma barbearia, como:
 
-### 1. Header
-- Logo da barbearia com ícone de tesoura
-- Data e hora em tempo real
-- Botões de ação (notificações, configurações, perfil)
+- receita mensal;
+- clientes atendidos;
+- agendamentos;
+- taxa de ocupação;
+- serviços mais procurados;
+- horários de maior movimento;
+- desempenho dos barbeiros.
 
-### 2. KPIs (Indicadores-Chave)
-- **Receita Mensal**: R$ 18.750 (+12.5%)
-- **Clientes Atendidos**: 287 (+8.3%)
-- **Agendamentos Hoje**: 12
-- **Taxa de Ocupação**: 85% (+5.2%)
+## Dados utilizados
 
-### 3. Visualizações de Dados
-- **Gráfico de Receita Mensal**: Linha temporal mostrando evolução da receita
-- **Distribuição de Serviços**: Gráfico de pizza com percentuais por tipo de serviço
-- **Horários de Pico**: Gráfico de barras com movimento por horário
-- **Tabela de Agendamentos**: Lista dos próximos atendimentos com status
-- **Top Barbeiros**: Ranking com métricas de performance e avaliações
+Todos os dados exibidos no dashboard são simulados e foram criados apenas para fins acadêmicos e de demonstração.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias presentes no projeto
 
-- **React 18**: Framework principal
-- **Vite**: Build tool e servidor de desenvolvimento
-- **Tailwind CSS**: Framework de estilização
-- **Recharts**: Biblioteca de gráficos
-- **Lucide React**: Ícones
-- **shadcn/ui**: Componentes de interface
+- React 18;
+- Vite;
+- Tailwind CSS;
+- Recharts;
+- Lucide React;
+- shadcn/ui.
 
-## 🚀 Como Executar
+Essas tecnologias foram utilizadas na construção da interface com apoio de ferramentas de IA.
+
+## Como executar
 
 ### Pré-requisitos
-- Node.js 18+
-- pnpm
 
-### Instalação e Execução
+- Node.js 18 ou superior;
+- pnpm.
+
+### Instalação
+
 ```bash
-# Instalar dependências
 pnpm install
-
-# Executar em modo desenvolvimento
 pnpm run dev
+```
 
-# Build para produção
+Para gerar uma versão de produção:
+
+```bash
 pnpm run build
-
-# Preview da build de produção
 pnpm run preview
 ```
 
-## 📱 Responsividade
+## Estrutura principal
 
-O dashboard foi desenvolvido com abordagem mobile-first e se adapta perfeitamente a diferentes tamanhos de tela:
-
-- **Desktop (>1024px)**: Layout completo com 12 colunas
-- **Tablet (768px-1024px)**: Layout adaptado com 8 colunas
-- **Mobile (≤768px)**: Layout empilhado com 4 colunas
-- **Mobile Small (≤480px)**: Layout simplificado com 2 colunas
-
-## 🎯 Funcionalidades
-
-### Interatividade
-- Hover effects em todos os cards
-- Tooltips informativos nos gráficos
-- Transições suaves entre estados
-- Animações de carregamento
-
-### Dados Simulados
-- Métricas realistas de uma barbearia
-- Dados históricos de 6 meses
-- Informações de 4 barbeiros
-- Status de agendamentos em tempo real
-
-## 📂 Estrutura do Projeto
-
-```
+```text
 src/
-├── components/           # Componentes React
-│   ├── Header.jsx       # Cabeçalho do dashboard
-│   ├── KPICard.jsx      # Cards de indicadores
-│   ├── ReceitaChart.jsx # Gráfico de receita
-│   ├── ServicosChart.jsx # Gráfico de serviços
-│   ├── HorariosPicoChart.jsx # Gráfico de horários
-│   ├── AgendamentosTable.jsx # Tabela de agendamentos
-│   └── TopBarbeirosTable.jsx # Tabela de barbeiros
+├── components/
 ├── data/
-│   └── mockData.js      # Dados simulados
-├── App.jsx              # Componente principal
-├── App.css              # Estilos globais
-└── main.jsx             # Ponto de entrada
+│   └── mockData.js
+├── App.jsx
+├── App.css
+└── main.jsx
 ```
 
-## 🎨 Customização
+## Minha participação
 
-### Cores
-As cores podem ser facilmente alteradas no arquivo `App.css` através das variáveis CSS customizadas.
+- levantamento e organização de requisitos;
+- definição das informações apresentadas;
+- modelagem do banco de dados do projeto acadêmico;
+- elaboração de documentação e manual de uso;
+- apoio na construção e revisão do dashboard com ferramentas de IA;
+- validação da estrutura visual e dos indicadores simulados.
 
-### Layout
-O sistema de grade é configurável através das classes CSS no arquivo `App.css`.
+## Próximas melhorias
 
-### Dados
-Os dados podem ser substituídos editando o arquivo `src/data/mockData.js` ou integrando com uma API real.
+- integração com uma fonte de dados real;
+- filtros por período;
+- exportação de relatórios;
+- autenticação de usuários;
+- documentação do banco de dados no repositório.
 
-## 📈 Métricas de Performance
+## Observação
 
-- **Lighthouse Score**: 95+
-- **First Contentful Paint**: <1.5s
-- **Largest Contentful Paint**: <2.5s
-- **Cumulative Layout Shift**: <0.1
-
-## 🔧 Próximas Melhorias
-
-- [ ] Integração com API real
-- [ ] Sistema de autenticação
-- [ ] Filtros de data personalizáveis
-- [ ] Exportação de relatórios
-- [ ] Notificações push
-- [ ] Modo escuro/claro
-- [ ] Internacionalização
-
-## 📄 Licença
-
-Este projeto foi desenvolvido como demonstração de habilidades em desenvolvimento web e pode ser usado como base para projetos similares.
-
----
-
-**Desenvolvido com ❤️ para a Barbearia Nômade**
+Este repositório representa um projeto acadêmico e meu processo de aprendizagem em tecnologia, dados e documentação de sistemas.
