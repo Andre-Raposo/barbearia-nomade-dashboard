@@ -1,14 +1,16 @@
 # Dashboard Acadêmico — Barbearia Nômade
 
-Projeto acadêmico desenvolvido para representar indicadores e informações de uma barbearia fictícia, utilizando dados simulados.
+Projeto acadêmico criado para organizar e apresentar indicadores de uma barbearia fictícia por meio de um dashboard com dados simulados.
 
-Minha principal participação no projeto envolveu o levantamento de requisitos, a organização das informações, a modelagem do banco de dados, a documentação e a definição dos indicadores apresentados no dashboard.
+## Visão geral
 
-A interface foi construída com apoio de ferramentas de Inteligência Artificial e utiliza tecnologias como React e bibliotecas de visualização. O projeto faz parte do meu processo de aprendizagem e não representa domínio avançado dessas tecnologias.
+O projeto foi desenvolvido durante a graduação e teve como foco o levantamento de requisitos, a organização das informações, a modelagem do banco de dados, a documentação e a definição dos indicadores apresentados.
 
-## Objetivo do projeto
+A interface foi construída com apoio de ferramentas de Inteligência Artificial e utiliza tecnologias de desenvolvimento web. O projeto representa meu processo de aprendizagem e não indica domínio avançado dessas tecnologias.
 
-Criar uma visão centralizada de informações importantes para a gestão de uma barbearia, como:
+## Objetivo
+
+Centralizar informações relevantes para a gestão da barbearia, como:
 
 - receita mensal;
 - clientes atendidos;
@@ -18,11 +20,11 @@ Criar uma visão centralizada de informações importantes para a gestão de uma
 - horários de maior movimento;
 - desempenho dos barbeiros.
 
-## Dados utilizados
+## Dados
 
-Todos os dados exibidos no dashboard são simulados e foram criados apenas para fins acadêmicos e de demonstração.
+Todos os dados exibidos são simulados e foram criados exclusivamente para fins acadêmicos e de demonstração.
 
-## Tecnologias presentes no projeto
+## Tecnologias presentes
 
 - React 18;
 - Vite;
@@ -32,6 +34,15 @@ Todos os dados exibidos no dashboard são simulados e foram criados apenas para 
 - shadcn/ui.
 
 Essas tecnologias foram utilizadas na construção da interface com apoio de ferramentas de IA.
+
+## Minha participação
+
+- levantamento e organização dos requisitos;
+- definição das informações e dos indicadores;
+- modelagem do banco de dados do projeto;
+- elaboração da documentação e do manual de uso;
+- apoio na construção e revisão do dashboard com ferramentas de IA;
+- validação da estrutura visual e dos dados simulados.
 
 ## Como executar
 
@@ -43,11 +54,13 @@ Essas tecnologias foram utilizadas na construção da interface com apoio de fer
 ### Instalação
 
 ```bash
+git clone https://github.com/Andre-Raposo/barbearia-nomade-dashboard.git
+cd barbearia-nomade-dashboard
 pnpm install
 pnpm run dev
 ```
 
-Para gerar uma versão de produção:
+Para gerar e visualizar uma versão de produção:
 
 ```bash
 pnpm run build
@@ -66,23 +79,20 @@ src/
 └── main.jsx
 ```
 
-## Minha participação
-
-- levantamento e organização de requisitos;
-- definição das informações apresentadas;
-- modelagem do banco de dados do projeto acadêmico;
-- elaboração de documentação e manual de uso;
-- apoio na construção e revisão do dashboard com ferramentas de IA;
-- validação da estrutura visual e dos indicadores simulados.
-
 ## Próximas melhorias
 
-- integração com uma fonte de dados real;
-- filtros por período;
-- exportação de relatórios;
-- autenticação de usuários;
-- documentação do banco de dados no repositório.
+- documentar o modelo de banco de dados no repositório;
+- integrar uma fonte de dados real;
+- adicionar filtros por período;
+- permitir exportação de relatórios;
+- implementar autenticação de usuários.
 
-## Observação
+## Limitações
 
-Este repositório representa um projeto acadêmico e meu processo de aprendizagem em tecnologia, dados e documentação de sistemas.
+- os dados são estáticos e simulados;
+- não há integração com banco de dados ou API;
+- o projeto foi desenvolvido com forte apoio de IA na interface.
+
+---
+
+Este repositório registra um projeto acadêmico e minha evolução em tecnologia, modelagem de dados e documentação de sistemas.
